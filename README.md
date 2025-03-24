@@ -29,4 +29,8 @@
 
 输出
 
-![image](/image/0xf305d719/term.png)
+![image](/image/0xf305d719/localTerminal.png)
+
+BscScan对比
+
+![image](/image/0xf305d719/bscscan.png)
