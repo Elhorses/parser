@@ -33,4 +33,4 @@
 
 BscScan对比
 
-![image](/image/0xf305d719/bscscan.png)
+![image](/image/0xf305d719/bscScan.png)
