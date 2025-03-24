@@ -1,6 +1,12 @@
+加个英文，方便牛马们search(BSC chain transfer parse / pancake swap V2 transfer parse)
+
 编译(二进制文件运行)环境：
 
 - Mac/m1
+
+如何使用
+
+- clone仓库后改修parser文件的权限(直接上777)，直接执行 `./parser <交易hash>`
 
 已实现✅
 - [x] pancake swap V2版本的所有交易解析，如下所示
