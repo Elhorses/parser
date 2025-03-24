@@ -7,6 +7,9 @@
 如何使用
 
 - clone仓库后改修parser文件的权限(直接上777)，直接执行 `./parser <交易hash>`
+- 或者`export RPC_URL=<rpc节点> && ./parser <交易hash> -v`
+- 在命令行末尾加上-v可以现实更加详细的信息
+- 可以自己设置RPC节点，如：`export RPC_URL="https://bsc-dataseed.binance.org/"`
 
 已实现✅
 - [x] pancake swap V2版本的所有交易解析，如下所示
