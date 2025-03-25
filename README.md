@@ -5,9 +5,9 @@
 如何使用
 
 - clone仓库后改修parser文件的权限(直接上777)，直接执行 `./parser <交易hash>`
-- 或者`export RPC_URL=<rpc节点> && ./parser <交易hash> -v`
 - 在命令行末尾加上-v可以现实更加详细的信息
-- 可以自己设置RPC节点，如：`export RPC_URL="https://bsc-dataseed.binance.org/"`
+- 注意default链的BSC链，其他链的交易解析需要加上`CHAIN`环境变量
+- 可以自己设置RPC节点，如：`export RPC_URL="https://bsc-dataseed.binance.org/"` ，注意，修改了RPC节点一定要加上链`CHAIN`环境变量
 - 可以选择链，如：`export CHAIN="bsc"`
 - 完整示例，如`export CHAIN="bsc" && export RPC_URL="https://bsc-dataseed.binance.org/" && ./parser 0xe216607d3d95f3db8b847157d2be325985767b2f4a9421e2d084b582eaab3060`
 
