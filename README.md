@@ -1,5 +1,3 @@
-加个英文，方便牛马们search(BSC chain transfer parse / pancake swap V2 transfer parse)
-
 编译(二进制文件运行)环境：
 
 - Mac/m1
@@ -10,9 +8,11 @@
 - 或者`export RPC_URL=<rpc节点> && ./parser <交易hash> -v`
 - 在命令行末尾加上-v可以现实更加详细的信息
 - 可以自己设置RPC节点，如：`export RPC_URL="https://bsc-dataseed.binance.org/"`
+- 可以选择链，如：`export CHAIN="bsc"`
+- 完整示例，如`export CHAIN="bsc" && export RPC_URL="https://bsc-dataseed.binance.org/" && ./parser 0xe216607d3d95f3db8b847157d2be325985767b2f4a9421e2d084b582eaab3060`
 
 已实现✅
-- [x] pancake swap V2版本的所有交易解析，如下所示
+- [x] PancakeSwap/UniSwap/SushiSwap(但不限于这三个DEX)的所有交易解析，如下所示
  
   - swapExactTokensForTokens(0x38ed1739)
   - swapTokensForExactTokens(0x8803dbee)
@@ -39,7 +39,7 @@
 示例1
 
 ```shell
-/parser 0xe216607d3d95f3db8b847157d2be325985767b2f4a9421e2d084b582eaab3060
+./parser 0xe216607d3d95f3db8b847157d2be325985767b2f4a9421e2d084b582eaab3060
 ```
 
 输出
@@ -70,7 +70,7 @@ BscScan对比
 
 提示🔔🔔：其他交易的输出打印可以自己从github上下载后运行命令即可
 
-注意⚠️⚠️：当前只支持BSC chain 的 pancake swap V2版本的解析
+注意⚠️⚠️：当前只支持EVM chain 系列的上述方法的解析，其他方法逻辑上也可以解析，但是没有添加方法名，直接运行即可
 
 最后说一下为什么写这么个傻逼玩意儿吧：
 就两个字：“装逼”！当然这是其一，主要还是因为高薪入职了某企，然后给我安排了这么个活，但是呢，排工期的时候呢，
